@@ -7,5 +7,5 @@ class Movie (models.Model):
     name = models.CharField(max_length=50, blank=False, null=False)
     yearOfRelease = models.CharField(max_length=4, blank=False, null=False)
     plot = models.TextField()
-    poster = models.ImageField()
+    poster = models.ImageField(upload_to='static/images/movies', default='../static/images/no_image.png')
     actors = models.ManyToManyField(Actor, blank=False)
