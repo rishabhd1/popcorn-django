@@ -1,6 +1,6 @@
 *.pyc
 local_settings.py
 .vscode
-static/images/actors
-static/images/producers
-static/images/movies
+media/images/actors
+media/images/producers
+media/images/movies

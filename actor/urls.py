@@ -1,6 +1,6 @@
 from django.urls import path, include
-from actor.views import ActorView
+from actor.views import ActorList
 
 urlpatterns = [
-    path('', ActorView.as_view(), name='actors'),
+    path('', ActorList.as_view(), name='actors'),
 ]

@@ -5,4 +5,4 @@ class Producer (models.Model):
     sex = models.CharField(max_length=20)
     dateOfBirth = models.DateField()
     bio = models.TextField()
-    image = models.ImageField(upload_to='static/images/producers', default='../static/images/no_image.png')
+    image = models.ImageField(upload_to='images/producers/', default='images/no_image.png')
