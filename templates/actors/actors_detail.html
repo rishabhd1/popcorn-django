@@ -15,7 +15,15 @@
 {% block content %}
 <div class="album py-5 bg-light">
     <div class="container">
-        <h1>Hello</h1>
+        <div class="card mb-4 box-shadow">
+            <img src="{{ actors_detail.image.url }}" />
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">{{ actors_detail.name }}</h4>
+            </div>
+            <div class="card-body">
+                {{ actors_detail.bio }}
+            </div>
+        </div>
     </div>
 </div>
 {% endblock content %}
