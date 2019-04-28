@@ -24,4 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage.as_view(), name='home'),
     path('actors/', include('actor.urls')),
+    path('movies/', include('movie.urls')),
+    path('producers/', include('producer.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
