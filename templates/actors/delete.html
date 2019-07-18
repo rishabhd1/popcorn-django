@@ -18,10 +18,11 @@
         <div class="row">
             <form action="." method="POST">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <input type="submit" value="Save">
+                <h1>Do you want to delete the product: " {{ object.title }} "?</h1>
+                <input type="submit" value="Yes">
+                <a href="../">Cancel</a>
             </form>
         </div>
     </div>
 </div>
-{% endblock content %}
+{% endblock content %}  
