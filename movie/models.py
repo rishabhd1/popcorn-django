@@ -2,6 +2,7 @@ from django.db import models
 from producer.models import Producer
 from actor.models import Actor
 
+
 class Movie (models.Model):
     producer = models.ForeignKey(Producer, on_delete=models.CASCADE)
     name = models.CharField(max_length=50, blank=False, null=False)
